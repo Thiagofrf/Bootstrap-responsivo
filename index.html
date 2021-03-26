@@ -4,37 +4,77 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
-        <title>CSS Responsivo</title>
+        <title>CSS Responsivo - Bootstrap</title>
     </head>
     <body>
         <header>
-            <div class="title">
-                <p>Portal de viagens</p>
-            </div>
-            <div class="links">
-                <a href="#" class="link">Destinos</a>
-                <a href="#" class="link">Viagens</a>
-                <a href="#" class="link">Valores</a>
-            </div>
+            <nav class="navbar navbar-expand-lg backgroundBlue">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">As melhores naves</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+                    <ul class="navbar-nav ">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Destinos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Valores</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </header>
-        <section class="banner">
-            <div class="image">
-                <img src="./img/ufo.png" width="30%" class="imgSettings" alt="Imagem de nave desenho">
+        <div class="container-fluid banner">
+            <div class="row p-md-5">
+                <div class="col-md-12 d-flex flex-column justify-content-center align-items-center">
+                    <div class="image">
+                        <img src="./img/ufo.png" width="100%" class="imgSettings mt-md-5 mb-md-5" alt="Imagem de nave desenho">
+                    </div>
+                    <div class="title">
+                        <p>As Melhores Naves!</p>
+                    </div>
+                    <div class="desc mb-md-5">
+                        Preços especiais para os planetas da federação galáctica. Visite ainda universos, dimensões e realidades alternativas.
+                    </div>
+                </div>
             </div>
-            <div class="sectionTitle">
-                <h1>As melhores naves!</h1>
-                <p>Preços especiais para os planetas da federação galáctica. Visite universos, dimensões e realidades alternativas!</p>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-center mt-5">
+                    <h2 class="inputsTitle">Consultar valores</h2>
+                </div>
             </div>
-        </section>
-        <div class="inputSection">
-            <h2 class="title">Consultar valores</h2>
-            <input type="text" placeholder="Origem">
-            <input type="text" placeholder="Destino">
-            <input type="text" placeholder="Data de partida">
-            <input type="text" placeholder="Data de volta">
-            <button>Consultar</button>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 d-flex flex-column mt-5">
+                    <label for="1">Origem</label>
+                    <input type="text" id='1' class="inputSettings pt-md-1 pb-md-1">
+                    <label for="2">Destino</label>
+                    <input type="text" id='2' class="inputSettings pt-md-1 pb-md-1">
+                    <label for="3">Data de partida</label>
+                    <input type="text" id='3' class="inputSettings pt-md-1 pb-md-1">
+                    <label for="4">Data de volta</label>
+                    <input type="text" id='4' class="inputSettings pt-md-1 pb-md-1">
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-2 pl-md-5">
+                    <button type="button" class="btn btn-success btnEnviar">Consultar</button>
+                </div>
+                
+            </div>
         </div>
         
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     </body>
 </html>
